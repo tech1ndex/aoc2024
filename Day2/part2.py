@@ -6,8 +6,6 @@ def check_safety(a):
   else:
     return False
 
-
-# read input_data from file
 with open("input.txt", "r") as file:
   input_data = file.readlines()
 
@@ -18,11 +16,11 @@ for line in input_data:
     total += 1
   else:
       i = 0
-      abs_len = len(nums) - 1
+      pb_len = len(nums) - 1
       while i < len(nums):
         value = nums[i]
         nums.pop(i)
-        if len(nums) >= abs_len:
+        if len(nums) >= pb_len:
           if check_safety(nums):
             total += 1
           else:

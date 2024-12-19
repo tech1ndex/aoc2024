@@ -6,7 +6,6 @@ def check_safety(a):
   else:
     return False
 
-# read input_data from file
 with open("input.txt", "r") as file:
   input_data = file.readlines()
 
